@@ -3,7 +3,7 @@ package com.whu.user.bean;
 import javax.persistence.Id;
 
 public class Soulsingleuser {
-    @Id
+
     private Integer id;
 
     private String sex;
@@ -22,7 +22,7 @@ public class Soulsingleuser {
 
     private String job;
 
-    private String character;
+    private String personality;
 
     private String hobby;
 
@@ -106,12 +106,12 @@ public class Soulsingleuser {
         this.job = job == null ? null : job.trim();
     }
 
-    public String getCharacter() {
-        return character;
+    public String getPersonality() {
+        return personality;
     }
 
-    public void setCharacter(String character) {
-        this.character = character == null ? null : character.trim();
+    public void setPersonality(String personality) {
+        this.personality = personality == null ? null : personality.trim();
     }
 
     public String getHobby() {

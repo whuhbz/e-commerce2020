@@ -3,7 +3,7 @@ package com.whu.user.bean;
 import javax.persistence.Id;
 
 public class DemoUser {
-    @Id
+
     private String id;
 
     private String name;

@@ -22,8 +22,8 @@ public class Sheet3Controller {
     @ApiOperation("查询某个用户")
     @RequestMapping(value = "selectSheet3User",method= RequestMethod.GET)
     @ResponseBody
-    public List<Sheet3> selectSheet3User(@RequestParam int id){
-        List<Sheet3> users = sheet3Service.getUserNativePlace(id);
+    public List<Sheet3> selectSheet3User(@RequestParam String str){
+        List<Sheet3> users = sheet3Service.getUserNativePlace(str);
         return users;
     }
 }
