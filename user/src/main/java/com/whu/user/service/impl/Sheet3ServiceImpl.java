@@ -1,8 +1,8 @@
 package com.whu.user.service.impl;
 
-import com.whu.user.bean.Sheet3;
+import com.whu.api.bean.Sheet3;
 import com.whu.user.mapper.Sheet3Mapper;
-import com.whu.user.service.Sheet3Service;
+import com.whu.api.service.Sheet3Service;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 

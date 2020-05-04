@@ -1,6 +1,6 @@
 package com.whu.user.mapper;
 
-import com.whu.user.bean.Soulsingleuser;
+import com.whu.api.bean.Soulsingleuser;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface SoulsingleuserMapper extends Mapper<Soulsingleuser> {

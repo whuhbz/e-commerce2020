@@ -1,7 +1,7 @@
 package com.whu.user.controller;
 
-import com.whu.user.bean.DemoUser;
-import com.whu.user.service.UserService;
+import com.whu.api.bean.DemoUser;
+import com.whu.api.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

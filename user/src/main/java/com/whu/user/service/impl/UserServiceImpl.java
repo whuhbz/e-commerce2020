@@ -1,8 +1,8 @@
 package com.whu.user.service.impl;
 
-import com.whu.user.bean.DemoUser;
+import com.whu.api.bean.DemoUser;
 import com.whu.user.mapper.DemoUserMapper;
-import com.whu.user.service.UserService;
+import com.whu.api.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

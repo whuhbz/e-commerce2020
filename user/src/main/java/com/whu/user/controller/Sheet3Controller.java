@@ -1,7 +1,7 @@
 package com.whu.user.controller;
 
-import com.whu.user.bean.Sheet3;
-import com.whu.user.service.Sheet3Service;
+import com.whu.api.bean.Sheet3;
+import com.whu.api.service.Sheet3Service;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class Sheet3Controller {
     Sheet3Service sheet3Service;
 
     @ApiOperation("查询某个用户")
-    @RequestMapping(value = "selectSheet3User",method= RequestMethod.GET)
+    @RequestMapping(value = "selectSheet3User",method= RequestMethod.GET,produces="application/json;charset=UTF-8")
     @ResponseBody
     public List<Sheet3> selectSheet3User(@RequestParam String str){
         List<Sheet3> users = sheet3Service.getUserNativePlace(str);

@@ -3,7 +3,7 @@
 <mapper namespace="com.whu.user.mapper.Sheet3Mapper">
 </mapper>
 <!--<mapper namespace="com.whu.user.mapper.Sheet3Mapper">-->
-  <!--<resultMap id="BaseResultMap" type="com.whu.user.bean.Sheet3">-->
+  <!--<resultMap id="BaseResultMap" type="com.whu.api.bean.Sheet3">-->
     <!--<result column="id" jdbcType="INTEGER" property="id" />-->
     <!--<result column="sex" jdbcType="VARCHAR" property="sex" />-->
     <!--<result column="soulName" jdbcType="VARCHAR" property="soulname" />-->
@@ -19,13 +19,13 @@
     <!--<result column="idealPartner" jdbcType="VARCHAR" property="idealpartner" />-->
     <!--<result column="monthlySalary" jdbcType="DOUBLE" property="monthlysalary" />-->
   <!--</resultMap>-->
-  <!--<resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.whu.user.bean.Sheet3">-->
+  <!--<resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.whu.api.bean.Sheet3">-->
     <!--<result column="photo" jdbcType="LONGVARBINARY" property="photo" />-->
   <!--</resultMap>-->
   <!--<sql id="Blob_Column_List">-->
     <!--photo-->
   <!--</sql>-->
-  <!--<insert id="insert" parameterType="com.whu.user.bean.Sheet3">-->
+  <!--<insert id="insert" parameterType="com.whu.api.bean.Sheet3">-->
     <!--insert into sheet3 (id, sex, soulName, -->
       <!--nativePlace, year, age, -->
       <!--height, weight, job, -->
@@ -39,7 +39,7 @@
       <!--#{idealpartner,jdbcType=VARCHAR}, #{monthlysalary,jdbcType=DOUBLE}, #{photo,jdbcType=LONGVARBINARY}-->
       <!--)-->
   <!--</insert>-->
-  <!--<insert id="insertSelective" parameterType="com.whu.user.bean.Sheet3">-->
+  <!--<insert id="insertSelective" parameterType="com.whu.api.bean.Sheet3">-->
     <!--insert into sheet3-->
     <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
       <!--<if test="id != null">-->

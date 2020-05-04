@@ -1,4 +1,4 @@
-package com.whu.user.bean;
+package com.whu.api.bean;
 
 import javax.persistence.Id;
 
