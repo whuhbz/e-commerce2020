@@ -1,8 +1,8 @@
-package com.whu.api.bean;
+package com.whu.user.bean;
 
 import javax.persistence.Id;
 
-public class Soulsingleuser {
+public class Sheet3 {
 
     private Integer id;
 

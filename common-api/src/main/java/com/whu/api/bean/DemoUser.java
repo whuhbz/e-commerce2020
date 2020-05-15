@@ -1,7 +1,5 @@
 package com.whu.api.bean;
 
-import javax.persistence.Id;
-
 public class DemoUser {
 
     private String id;

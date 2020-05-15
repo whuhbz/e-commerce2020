@@ -3,7 +3,7 @@
 <mapper namespace="com.whu.user.mapper.DemoUserMapper">
 </mapper>
 <!--<mapper namespace="com.whu.user.mapper.DemoUserMapper">-->
-  <!--<resultMap id="BaseResultMap" type="com.whu.api.bean.DemoUser">-->
+  <!--<resultMap id="BaseResultMap" type="com.whu.user.bean.DemoUser">-->
     <!--<id column="id" jdbcType="VARCHAR" property="id" />-->
     <!--<result column="name" jdbcType="VARCHAR" property="name" />-->
     <!--<result column="age" jdbcType="VARCHAR" property="age" />-->
@@ -22,13 +22,13 @@
     <!--delete from demo_user-->
     <!--where id = #{id,jdbcType=VARCHAR}-->
   <!--</delete>-->
-  <!--<insert id="insert" parameterType="com.whu.api.bean.DemoUser">-->
+  <!--<insert id="insert" parameterType="com.whu.user.bean.DemoUser">-->
     <!--insert into demo_user (id, name, age, -->
       <!--job)-->
     <!--values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, -->
       <!--#{job,jdbcType=VARCHAR})-->
   <!--</insert>-->
-  <!--<insert id="insertSelective" parameterType="com.whu.api.bean.DemoUser">-->
+  <!--<insert id="insertSelective" parameterType="com.whu.user.bean.DemoUser">-->
     <!--insert into demo_user-->
     <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
       <!--<if test="id != null">-->
@@ -59,7 +59,7 @@
       <!--</if>-->
     <!--</trim>-->
   <!--</insert>-->
-  <!--<update id="updateByPrimaryKeySelective" parameterType="com.whu.api.bean.DemoUser">-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.whu.user.bean.DemoUser">-->
     <!--update demo_user-->
     <!--<set>-->
       <!--<if test="name != null">-->
@@ -74,7 +74,7 @@
     <!--</set>-->
     <!--where id = #{id,jdbcType=VARCHAR}-->
   <!--</update>-->
-  <!--<update id="updateByPrimaryKey" parameterType="com.whu.api.bean.DemoUser">-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.whu.user.bean.DemoUser">-->
     <!--update demo_user-->
     <!--set name = #{name,jdbcType=VARCHAR},-->
       <!--age = #{age,jdbcType=VARCHAR},-->

@@ -1,7 +1,7 @@
 package com.whu.user.controller;
 
-import com.whu.api.bean.Sheet3;
-import com.whu.api.service.Sheet3Service;
+import com.whu.user.bean.Sheet3;
+import com.whu.user.service.Sheet3Service;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,7 @@
 package com.whu.user.mapper;
 
-import com.whu.api.bean.Sheet3;
+
+import com.whu.user.bean.Sheet3;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface Sheet3Mapper extends Mapper<Sheet3> {
