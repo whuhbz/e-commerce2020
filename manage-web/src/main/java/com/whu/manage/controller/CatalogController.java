@@ -2,17 +2,36 @@ package com.whu.manage.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.whu.api.bean.PmsBaseCatalog1;
+import com.whu.api.bean.PmsBaseCatalog2;
+import com.whu.api.bean.PmsBaseCatalog3;
 import com.whu.api.service.CatalogService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
+@CrossOrigin
 public class CatalogController {
 
     @Reference
     CatalogService catalogService;
+
+    @RequestMapping("getCatalog3")
+    @ResponseBody
+    public List<PmsBaseCatalog3> getCatalog3(@RequestParam Integer catalog2Id){
+        List<PmsBaseCatalog3> catalog3s = catalogService.getCatalog3(catalog2Id);
+        return  catalog3s;
+    }
+
+    @RequestMapping("getCatalog2")
+    @ResponseBody
+    public List<PmsBaseCatalog2> getCatalog2(@RequestParam Integer catalog1Id){
+        List<PmsBaseCatalog2> catalog2s = catalogService.getCatalog2(catalog1Id);
+        return  catalog2s;
+    }
 
     @RequestMapping("getCatalog1")
     @ResponseBody

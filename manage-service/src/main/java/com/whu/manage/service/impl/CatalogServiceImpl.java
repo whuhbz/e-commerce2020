@@ -2,6 +2,8 @@ package com.whu.manage.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.whu.api.bean.PmsBaseCatalog1;
+import com.whu.api.bean.PmsBaseCatalog2;
+import com.whu.api.bean.PmsBaseCatalog3;
 import com.whu.api.service.CatalogService;
 import com.whu.manage.mapper.PmsBaseCatalog1Mapper;
 import com.whu.manage.mapper.PmsBaseCatalog2Mapper;
@@ -24,5 +26,21 @@ public class CatalogServiceImpl implements CatalogService {
     @Override
     public List<PmsBaseCatalog1> getCatalog1() {
         return pmsBaseCatalog1Mapper.selectAll();
+    }
+
+    @Override
+    public List<PmsBaseCatalog2> getCatalog2(Integer catalog1Id) {
+        PmsBaseCatalog2 pmsBaseCatalog2 = new PmsBaseCatalog2();
+        pmsBaseCatalog2.setCatalog1Id(catalog1Id);
+        List<PmsBaseCatalog2> pmsBaseCatalog2s = pmsBaseCatalog2Mapper.select(pmsBaseCatalog2);
+        return pmsBaseCatalog2s;
+    }
+
+    @Override
+    public List<PmsBaseCatalog3> getCatalog3(Integer catalog2Id) {
+        PmsBaseCatalog3 pmsBaseCatalog3 = new PmsBaseCatalog3();
+        pmsBaseCatalog3.setCatalog2Id(catalog2Id);
+        List<PmsBaseCatalog3> pmsBaseCatalog3s = pmsBaseCatalog3Mapper.select(pmsBaseCatalog3);
+        return pmsBaseCatalog3s;
     }
 }
