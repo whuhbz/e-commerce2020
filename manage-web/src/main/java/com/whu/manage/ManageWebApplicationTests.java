@@ -18,8 +18,8 @@ springboot启动时会默认配置datasource,
         DataSourceTransactionManagerAutoConfiguration.class,
         HibernateJpaAutoConfiguration.class})
 @EnableDubbo
-public class ManageWebApplication {
+public class ManageWebApplicationTests {
     public static void main(String[] args) {
-        SpringApplication.run(ManageWebApplication.class,args);
+        SpringApplication.run(ManageWebApplicationTests.class,args);
     }
 }
