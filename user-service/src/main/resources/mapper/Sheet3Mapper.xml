@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whu.user.mapper.Sheet3Mapper">
+</mapper>
+<!--<mapper namespace="com.whu.user.mapper.Sheet3Mapper">-->
+  <!--<resultMap id="BaseResultMap" type="com.whu.user.bean.Sheet3">-->
+    <!--<result column="id" jdbcType="INTEGER" property="id" />-->
+    <!--<result column="sex" jdbcType="VARCHAR" property="sex" />-->
+    <!--<result column="soulName" jdbcType="VARCHAR" property="soulname" />-->
+    <!--<result column="nativePlace" jdbcType="VARCHAR" property="nativeplace" />-->
+    <!--<result column="year" jdbcType="VARCHAR" property="year" />-->
+    <!--<result column="age" jdbcType="INTEGER" property="age" />-->
+    <!--<result column="height" jdbcType="DOUBLE" property="height" />-->
+    <!--<result column="weight" jdbcType="DOUBLE" property="weight" />-->
+    <!--<result column="job" jdbcType="VARCHAR" property="job" />-->
+    <!--<result column="character" jdbcType="VARCHAR" property="character" />-->
+    <!--<result column="hobby" jdbcType="VARCHAR" property="hobby" />-->
+    <!--<result column="loveExperience" jdbcType="VARCHAR" property="loveexperience" />-->
+    <!--<result column="idealPartner" jdbcType="VARCHAR" property="idealpartner" />-->
+    <!--<result column="monthlySalary" jdbcType="DOUBLE" property="monthlysalary" />-->
+  <!--</resultMap>-->
+  <!--<resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.whu.user.bean.Sheet3">-->
+    <!--<result column="photo" jdbcType="LONGVARBINARY" property="photo" />-->
+  <!--</resultMap>-->
+  <!--<sql id="Blob_Column_List">-->
+    <!--photo-->
+  <!--</sql>-->
+  <!--<insert id="insert" parameterType="com.whu.user.bean.Sheet3">-->
+    <!--insert into sheet3 (id, sex, soulName, -->
+      <!--nativePlace, year, age, -->
+      <!--height, weight, job, -->
+      <!--character, hobby, loveExperience, -->
+      <!--idealPartner, monthlySalary, photo-->
+      <!--)-->
+    <!--values (#{id,jdbcType=INTEGER}, #{sex,jdbcType=VARCHAR}, #{soulname,jdbcType=VARCHAR}, -->
+      <!--#{nativeplace,jdbcType=VARCHAR}, #{year,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, -->
+      <!--#{height,jdbcType=DOUBLE}, #{weight,jdbcType=DOUBLE}, #{job,jdbcType=VARCHAR}, -->
+      <!--#{character,jdbcType=VARCHAR}, #{hobby,jdbcType=VARCHAR}, #{loveexperience,jdbcType=VARCHAR}, -->
+      <!--#{idealpartner,jdbcType=VARCHAR}, #{monthlysalary,jdbcType=DOUBLE}, #{photo,jdbcType=LONGVARBINARY}-->
+      <!--)-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.whu.user.bean.Sheet3">-->
+    <!--insert into sheet3-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="id != null">-->
+        <!--id,-->
+      <!--</if>-->
+      <!--<if test="sex != null">-->
+        <!--sex,-->
+      <!--</if>-->
+      <!--<if test="soulname != null">-->
+        <!--soulName,-->
+      <!--</if>-->
+      <!--<if test="nativeplace != null">-->
+        <!--nativePlace,-->
+      <!--</if>-->
+      <!--<if test="year != null">-->
+        <!--year,-->
+      <!--</if>-->
+      <!--<if test="age != null">-->
+        <!--age,-->
+      <!--</if>-->
+      <!--<if test="height != null">-->
+        <!--height,-->
+      <!--</if>-->
+      <!--<if test="weight != null">-->
+        <!--weight,-->
+      <!--</if>-->
+      <!--<if test="job != null">-->
+        <!--job,-->
+      <!--</if>-->
+      <!--<if test="character != null">-->
+        <!--character,-->
+      <!--</if>-->
+      <!--<if test="hobby != null">-->
+        <!--hobby,-->
+      <!--</if>-->
+      <!--<if test="loveexperience != null">-->
+        <!--loveExperience,-->
+      <!--</if>-->
+      <!--<if test="idealpartner != null">-->
+        <!--idealPartner,-->
+      <!--</if>-->
+      <!--<if test="monthlysalary != null">-->
+        <!--monthlySalary,-->
+      <!--</if>-->
+      <!--<if test="photo != null">-->
+        <!--photo,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="id != null">-->
+        <!--#{id,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="sex != null">-->
+        <!--#{sex,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="soulname != null">-->
+        <!--#{soulname,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="nativeplace != null">-->
+        <!--#{nativeplace,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="year != null">-->
+        <!--#{year,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="age != null">-->
+        <!--#{age,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="height != null">-->
+        <!--#{height,jdbcType=DOUBLE},-->
+      <!--</if>-->
+      <!--<if test="weight != null">-->
+        <!--#{weight,jdbcType=DOUBLE},-->
+      <!--</if>-->
+      <!--<if test="job != null">-->
+        <!--#{job,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="character != null">-->
+        <!--#{character,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="hobby != null">-->
+        <!--#{hobby,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="loveexperience != null">-->
+        <!--#{loveexperience,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="idealpartner != null">-->
+        <!--#{idealpartner,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="monthlysalary != null">-->
+        <!--#{monthlysalary,jdbcType=DOUBLE},-->
+      <!--</if>-->
+      <!--<if test="photo != null">-->
+        <!--#{photo,jdbcType=LONGVARBINARY},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+<!--</mapper>-->
