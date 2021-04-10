@@ -37,6 +37,11 @@
         <jest.version>5.3.3</jest.version>
         <jna.version>4.5.1</jna.version>
         <beanUtils.version>1.9.3</beanUtils.version>
+
+        <mybatisplus-generator.version>3.3.1.tmp</mybatisplus-generator.version>
+        <apache-velocity.version>2.2</apache-velocity.version>
+        <mybatisplus.version>3.3.1.tmp</mybatisplus.version>
+
     </properties>
 
     <dependencyManagement>
@@ -136,6 +141,26 @@
                 <artifactId>commons-beanutils</artifactId>
                 <version>${beanUtils.version}</version>
             </dependency>
+
+            <!-- 引入MyBatisPlus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisplus.version}</version>
+            </dependency>
+
+            <!--  代码生成器-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatisplus-generator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${apache-velocity.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
