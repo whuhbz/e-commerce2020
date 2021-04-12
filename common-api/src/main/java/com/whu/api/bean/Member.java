@@ -1,8 +1,11 @@
 package com.whu.api.bean;
 
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.TableName;
 
-public class Member {
+import java.io.Serializable;
+import java.util.Date;
+@TableName("ums_member")
+public class Member implements Serializable {
     private Integer id;
 
     private Integer memberLevelId;

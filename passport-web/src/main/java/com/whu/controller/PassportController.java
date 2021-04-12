@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class PassportController {
@@ -27,7 +26,7 @@ public class PassportController {
         Map<String,String> map = new HashMap<>();
         Map<String, Object> decode = null;
         if(StringUtils.isNotBlank(token)&&StringUtils.isNotBlank(currentIp)){
-            decode = JwtUtil.decode(token, "2020www", currentIp);
+            decode = JwtUtil.decode(token, "whuinfo", currentIp);
         }
         if(decode!=null){
             map.put("status","success");
@@ -36,6 +35,9 @@ public class PassportController {
         }else{
             map.put("status","fail");
         }
+        ArrayList<String> strings = new ArrayList<>(map.values());
+        String[] list = (String[]) strings.toArray();
+                Arrays.sort(strings.toArray());
         return JSON.toJSONString(map);
     }
 

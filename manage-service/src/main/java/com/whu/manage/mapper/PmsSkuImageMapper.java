@@ -1,7 +1,7 @@
 package com.whu.manage.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.whu.api.bean.PmsSkuImage;
-import tk.mybatis.mapper.common.Mapper;
 
-public interface PmsSkuImageMapper extends Mapper<PmsSkuImage> {
+public interface PmsSkuImageMapper extends BaseMapper<PmsSkuImage> {
 }
